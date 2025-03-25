@@ -2,7 +2,7 @@
 
 Este projeto é o backend de uma aplicação para gerenciamento de investimentos, responsável por fornecer uma API REST que permite criar, listar, editar e excluir investimentos. A API realiza validações importantes, como garantir que os campos estejam preenchidos, que o valor investido seja positivo e que a data do investimento não seja no futuro.  
 
-## 🚀 Funcionalidades da API  
+## Funcionalidades da API  
 A API possui as seguintes rotas e funcionalidades:  
 
 ### Rotas de Investimentos (`/api/investments`)  
@@ -38,7 +38,7 @@ A API possui as seguintes rotas e funcionalidades:
 
 ---
 
-## 🚀 Como Rodar o Projeto Localmente  
+## Como Rodar o Projeto Localmente  
 
 ### Pré-requisitos  
 Certifique-se de que você tenha o **Node.js** e o **npm** instalados em sua máquina.  
