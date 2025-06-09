@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "teste tecnico de back para controle de investimentos",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
@@ -11,9 +12,12 @@
   "author": "Sofia Ferreira",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.9.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.12.1"
+    "mongoose": "^8.12.1",
+    "nodemon": "^3.1.10",
+    "prisma": "^6.9.0"
   }
 }
