@@ -50,9 +50,6 @@ export const obterInvestimentoPorId = async (req, res) => {
       return res.status(404).json({ mensagem: 'Investimento não encontrado' });
     }
 
-    // Mensagem no terminal
-    console.log('Investimento encontrado:', investimento);
-
     res.json({ data: investimento, mensagem: 'Investimento encontrado com sucesso!' });
   } catch (error) {
     res.status(500).json({ mensagem: 'Erro ao buscar investimento', error });
@@ -109,8 +106,7 @@ export const deletarInvestimento = async (req, res) => {
     await prisma.investimento.delete({
       where: { id: Number(req.params.id) },
     });
-
-
+    
     res.json({ mensagem: 'Investimento deletado com sucesso!' });
   } catch (error) {
     res.status(500).json({ mensagem: 'Erro ao deletar investimento', error });
